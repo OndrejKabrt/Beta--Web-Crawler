@@ -58,9 +58,24 @@ class CrawlerConfig:
 2024-12-20 14:55:15 - INFO: Crawl completed. Total pages: 50
 ```
 
+### **Commands for activating program in virtual environment**
+```plaintext
+cd name_of_project_directory
+
+#For creating virtual environment, needed just one time
+python -m venv venv
+
+#Activate virtual environment
+venv\Scripts\activate
+
+# Than you have to install packages taht are needed and are not in default python library
+pip install requests
+pip install beautifulsoup4
+pip install coverage
+pip install requests beautifulsoup4 coverage
 
 
-
+```
 
 
 

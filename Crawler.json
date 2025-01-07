@@ -1,9 +1,9 @@
 {
-  "start_urls": ["https://example.com"],
-    "max_pages": 30,
-    "max_depth": 5,
+  "start_urls": [ "https://www.novinky.cz/"],
+    "max_pages": 500,
+    "max_depth": 15,
     "max_workers": 10,
     "timeout": 3,
-    "wanted_title": "",
+    "wanted_title": "Auto",
     "wanted_header": ""
 }

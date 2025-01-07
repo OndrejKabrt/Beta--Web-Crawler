@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from wsgiref import headers
-
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
@@ -12,12 +11,11 @@ import logging
 from threading import Thread
 from typing import List
 import json
-
 from coverage import results
 
 
 class WebCrawler:
-    def __init__(self, start_urls, max_pages, max_depth, max_workers,timeout): #, wanted_string
+    def __init__(self, start_urls, max_pages, max_depth, max_workers,timeout):
         if start_urls is None:
             raise TypeError("start_urls cannot be None")
         if max_pages is None:
@@ -154,7 +152,7 @@ class WebCrawler:
         while True:
             # Check if crawl limit reached
             with self.page_count_lock:
-                if self.total_pages_crawled + + (self.max_workers /2) >= self.max_pages:
+                if self.total_pages_crawled + (self.max_workers /4) >= self.max_pages:
                     break
 
             try:
@@ -279,6 +277,8 @@ class findMatchingHeader(Thread):
 
     def run(self):
         self.find()
+
+
 class findMatchingTitleAndHeader(Thread):
     def __init__(self, from_id, to_id, wanted_title, wanted_header):
         Thread.__init__(self)
