@@ -58,6 +58,14 @@ class CrawlerConfig:
 2024-12-20 14:55:15 - INFO: Crawl completed. Total pages: 50
 ```
 
+### **How to start program
+```plaintext
+Open \dist\MyWebCrowler and than double clic Crawler.json and configure parametrs by your will
+If you dont want to configure anything just double click MyWebCrowler.exe and take a look 
+how Web Crawler crawl threw Novinky.cz
+```
+
+
 ### **Commands for activating program in virtual environment**
 ```plaintext
 cd name_of_project_directory
