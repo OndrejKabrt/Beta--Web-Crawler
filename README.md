@@ -77,7 +77,7 @@ pip install coverage
 pip install requests beautifulsoup4 coverage
 
 # Than you should open Crawler.json and set attributes there
-vim Crawler.json
+notepad Crawler.json
 
 {
   "start_urls": [ "url addres you want to search, or other page you want to search"],
