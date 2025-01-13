@@ -72,7 +72,27 @@ venv\Scripts\activate
 pip install requests
 pip install beautifulsoup4
 pip install coverage
+
+# Command that install all necessary packages at once
 pip install requests beautifulsoup4 coverage
+
+# Than you should open Crawler.json and set attributes there
+vim Crawler.json
+
+{
+  "start_urls": [ "url addres you want to search, or other page you want to search"],
+    "max_pages": Enter number of pages you want to search in numbers,
+    "max_depth": Enter maximal depth which crawler can search,
+    "max_workers": Enter number of threads you want to run,
+    "timeout": Enter time lenght that thread wait until page answer,
+    "wanted_title": "Enter specific title you want to try to find",
+    "wanted_header": "Enter specific header you want to try to find"
+}
+
+#After setting values in Crawler.json just run command
+
+python MyWebCrowler.py
+
 
 
 ```
